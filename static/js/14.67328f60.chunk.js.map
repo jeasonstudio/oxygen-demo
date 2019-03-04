@@ -1,0 +1,1 @@
+{"version":3,"sources":["examples/sequence/example4.js"],"names":["__webpack_require__","r","__webpack_exports__"],"mappings":"2FAAAA,EAAAC,EAAAC,GAAcA,EAAA","file":"static/js/14.67328f60.chunk.js","sourcesContent":["export default `participant C\nparticipant B\nparticipant A\nNote right of A: By listing the participants\\\\n you can change their order`"],"sourceRoot":""}

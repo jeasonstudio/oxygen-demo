@@ -1,0 +1,38 @@
+graph G {
+  graph [pad="0.75",ranksep="0.5",nodesep="0.3"];
+  node [shape=box,width=1.8];
+  edge [style=invis];
+  rankdir=LR;
+  compound = true;
+//   subgraph cluster3 {
+//       label = "afd"
+//   }
+//   subgraph cluster2 {
+//     style="filled"
+//     color="#fa541c";
+//     fillcolor="#ffbb96";
+//     a [color=none,fontcolor="#fa541c",label="集团基础设施（AONE、GITLAB、BUC 等）"];
+//   }
+//   // node [shape=box,fontcolor="#fa541c",color="#fa541c",fillcolor="#ffbb96",width=9]
+
+  subgraph cluster1 {
+    color="#d46b08";
+    style="filled"
+    fontcolor="#d46b08";
+    // fillcolor="#ffc069";
+    fillcolor="#ffe7ba";
+    label = "TEAMS PLATEFORM"
+    node [color="#d46b08",fontcolor="#d46b08",fillcolor="#ffa940"]
+    "解决方案管理" -- "基础权限" -- "开发协作流控制" -- "服务（内建+外接）";
+  }
+  subgraph cluster0 {
+    color="none"
+    node [style=filled,fontcolor="#237804",color="#237804",fillcolor="#73d13d"];
+    "标准前端应用" -- "标准 H5 应用" -- "MIX 应用场景" -- "鲲鹏前端应用";
+    "标准 Node 应用" -- "轻型函数应用" -- "同构应用" -- "....."
+  }
+  
+  "标准前端应用" -- "标准 Node 应用" [constraint=false];
+ 
+  
+}

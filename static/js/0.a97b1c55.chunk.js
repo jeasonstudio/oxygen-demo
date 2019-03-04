@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{128:function(o,n,t){"use strict";t.r(n),n.default="st=>start: Start:>http://www.google.com[blank]\ne=>end:>http://www.google.com\nop1=>operation: My Operation\nsub1=>subroutine: My Subroutine\ncond=>condition: Yes\nor No?:>http://www.google.com\nio=>inputoutput: catch something...\npara=>parallel: parallel tasks\n\nst->op1->cond\ncond(yes)->io->e\ncond(no)->para\npara(path1, bottom)->sub1(right)->op1\npara(path2, top)->op1"}}]);
+//# sourceMappingURL=0.a97b1c55.chunk.js.map

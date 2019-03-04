@@ -1,0 +1,1 @@
+{"version":3,"sources":["examples/sequence/example2.js"],"names":["__webpack_require__","r","__webpack_exports__"],"mappings":"2FAAAA,EAAAC,EAAAC,GAAcA,EAAA","file":"static/js/12.46d064c5.chunk.js","sourcesContent":["export default `Title: Here is a title\nA->B: Normal line\nB-->C: Dashed line\nC->>D: Open arrow\nD-->>A: Dashed open arrow`"],"sourceRoot":""}

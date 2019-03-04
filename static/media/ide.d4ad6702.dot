@@ -1,0 +1,34 @@
+digraph G {
+  graph [pad="0.75",ranksep="0.25",nodesep="0.8"];
+  node [shape=box,width=1.4,style=filled,fillcolor="#ffc069"];
+
+  // edge [style=invis];
+  splines=false;
+  compound=true;
+	subgraph cluster_teams {
+    // style=dashed;
+    label="Dawn Teams";
+    "Git Config/Token" -> "项目信息" -> "解决方案生成的项目";
+	}
+  "解决方案生成的项目" -> "载入 WebIDE" [label="用户点击「开发」",lhead=cluster_ide]
+	subgraph cluster_ide {
+    // style=dashed;
+    label="AppStudio";
+    "载入 WebIDE" -> "载入插件" -> "kbuild 生成容器环境" -> "正常开发调试"
+	}
+  subgraph cluster_third {
+    color=none;
+    
+    "三方授权页，云查询颁发 TOKEN" [fillcolor=none;style=dashed]
+  }
+  subgraph cluster_ext {
+     node [fillcolor=none,color="#0050b3",fontcolor="#0050b3"]
+    style=dashed;
+    label="WebIDE 插件";
+    "装载" -> "读取 URL 中的项目/用户信息" -> {"配置 GitToken", "配置 GitConfig", "导入/打开项目"} -> "其他配置注入环境变量"
+    "其他配置注入环境变量" -> "三方授权页，云查询颁发 TOKEN" [style="dashed"]
+    "三方授权页，云查询颁发 TOKEN" -> "其他配置注入环境变量" [style="dashed"]
+	}
+  "载入插件" -> "装载" [lhead=cluster_ext,constraint=false];
+  "装载" -> "载入插件"  [ltail=cluster_ext,constraint=false];
+}

@@ -1,0 +1,30 @@
+digraph G {
+  graph [pad="0.75",ranksep="0.25",nodesep="0.8"];
+  node [shape=box,width=1.4];
+  edge [style=invis];
+	subgraph cluster_0 {
+    style=dashed;
+    label="面 向 用 户";
+    node [style=filled,color="#d46b08",fontcolor="#d46b08",fillcolor="#ffc069"];
+    n_0_0 [label=前端开发];
+    node [color="#1890ff",fontcolor="#1890ff",fillcolor="#91d5ff"];
+    n_0_1 [label=后端开发];
+    n_0_2 [label=外包同学];
+    n_0_3 [label=外部用户];
+    node [color="#FFFFFF",fontcolor="#FFFFFF",fillcolor="#FFFFFF"];
+    blank1; blank2;
+    n_0_0 -> n_0_1 -> n_0_2 -> n_0_3 -> blank1 -> blank2;
+	}
+	subgraph cluster_1 {
+    label="部门及团队";
+    node [style=filled,color="#d46b08",fontcolor="#d46b08",fillcolor="#ffc069"];
+    n_1_0 [label=销售管理部];
+    node [color="#1890ff",fontcolor="#1890ff",fillcolor="#91d5ff"];
+    n_1_1 [label=飞天一部];
+    n_1_2 [label=飞天八部];
+    n_1_3 [label=飞天九部];
+    n_1_4 [label=云零售];
+    n_1_5 [label="其他..."];
+    n_1_0 -> n_1_1 -> n_1_2 -> n_1_3 -> n_1_4 -> n_1_5;
+	}
+}

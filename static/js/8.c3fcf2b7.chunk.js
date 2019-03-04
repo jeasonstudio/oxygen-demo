@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{136:function(e,n,o){"use strict";o.r(n),n.default="sequenceDiagram\n  Alice->>Bob: Hello Bob, how are you?\n  alt is sick\n  Bob->>Alice: Not so good :(\n  else is well\n  Bob->>Alice: Feeling fresh like a daisy\n  end\n  opt Extra response\n  Bob->>Alice: Thanks for asking\n  end"}}]);
+//# sourceMappingURL=8.c3fcf2b7.chunk.js.map

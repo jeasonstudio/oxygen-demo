@@ -1,0 +1,18 @@
+//timescale.dot
+digraph timescale{
+    //left->right方向
+    rankdir = LR;
+    {
+        node[shape = plaintext];
+        1995 -> 1996 -> 1997 -> 1998 ;
+    }
+    {
+        node[shape = box, style = filled,fontsize=11];
+        WAR3 -> Xhero -> Footman;
+        WAR3 -> Battleship;
+    }
+    {rank = same; 1996; WAR3;}
+    {rank = same; 1997; Xhero; Battleship;}
+    {rank = same; 1998; Footman;}
+    
+}

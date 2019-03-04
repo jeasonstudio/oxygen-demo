@@ -1,0 +1,1 @@
+{"version":3,"sources":["examples/mermaid/example2.js"],"names":["__webpack_require__","r","__webpack_exports__"],"mappings":"0FAAAA,EAAAC,EAAAC,GAAcA,EAAA","file":"static/js/9.95eb78ae.chunk.js","sourcesContent":["export default `graph LR\nA[Hard edge] -->B(Round edge)\n  B --> C{Decision}\n  C -->|One| D[Result one]\n  C -->|Two| E[Result two]`"],"sourceRoot":""}
